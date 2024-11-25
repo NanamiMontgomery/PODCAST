@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PODCAST</title>
+    <link rel="stylesheet" href="./css/STYLE.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section id="navigation-now" style="background-color: #F7EDE8;">
+        <nav class="navbar navbar-expand-lg" style="padding: 0 10vw;">
+            <div class="container-fluid gap-123">
+
+                <a class="navbar-brand" href="./HOME.html">
+                    <img src="./image/logo.svg" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close">
+                        </button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" aria-current="page" href="./NEWS.html">Episodes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="./STAGE.html">More</a>
+                            </li>
+                        </ul>
+
+                        <div class="navbar-nav ms-auto d-lg-inline-flex btn-padding gap-3">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#modal"
+                                class="btn border-radius-8" style="border: 2px solid black"><a href="./NEWS.html">RECENT
+                                    EPISODES</a>
+                            </button>
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#modal" class="btn bg-black"><a
+                                    href="./LOGIN.html" class="text-white">SUBSCRIBE</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid"
+            style="background-image: url(./image/main.svg); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 8vh 0 14vh;">
+            <div class="text-center" style="padding: 0 10vw;">
+                <h1 class="fw-bold font-1">Your Daily <br>
+                    <span class="fw-bold" style="color: red;">Podcast</span>
+                </h1>
+                <p>We cover all kinds of categories and <br>
+                    a weekly special guest.</p>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#modal" class="btn bg-black"
+                    style="width: 184px; height: 65px; box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);"><a
+                        href="./LOGIN.html" class="text-white">SUBSCRIBE</a>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <div id="carouselExampleControlsNoTouching" class="carousel carousel-light slide" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="./image/image-1.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-2.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-3.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-4.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-5.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="./image/image-3.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-4.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-5.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-1.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-2.png" alt="...">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="./image/image-4.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-5.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-1.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-2.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-3.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <img src="./image/image-5.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-1.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-2.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-3.png" alt="...">
+                            </div>
+                            <div class="card">
+                                <img src="./image/image-4.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-wrapper-controls">
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black"
+                            class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                        </svg>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black"
+                            class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white" id="membership">
+        <div class="d-flex flex-column gap-5 pt-140">
+            <div class="container-fluid text-center" style="padding: 0 10vw;">
+                <h1 class="fw-bold pb-4">Membership benefits</h1>
+                <h3 style="color: #4D4D4D;">Become our sponsor and get all benefits</h3>
+            </div>
+            <div class="d-flex flex-column text-center gap-3" style="padding: 0 10vw;">
+                <div class="row">
+                    <div class="col">
+                        <img src="./image/line.svg" alt="">
+                        <h3 class="fw-bold py-2">Topic by Request</h3>
+                        <p>Lorem ipsum dolor sit amet consectet pis
+                            cing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div class="col">
+                        <img src="./image/stars.svg" alt="">
+                        <h3 class="fw-bold py-2">Exclusive Content</h3>
+                        <p>Lorem ipsum dolor sit amet consectet pis
+                            cing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div class="col">
+                        <img src="./image/face.svg" alt="">
+                        <h3 class="fw-bold py-2">Join the Community</h3>
+                        <p>Lorem ipsum dolor sit amet consectet pis
+                            cing elit, sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <img src="./image/faces.svg" alt="">
+                        <h3 class="fw-bold py-2">Livestreaming Access</h3>
+                        <p>Lorem ipsum dolor sit amet consectet pis
+                            cing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div class="col">
+                        <img src="./image/fire.svg" alt="">
+                        <h3 class="fw-bold py-2">Exclusive Episodes & Merch</h3>
+                        <p>Lorem ipsum dolor sit amet consectet pis
+                            cing elit, sed do eiusmod tempor.</p>
+                    </div>
+                    <div class="col">
+                        <img src="./image/vect.svg" alt="">
+                        <h3 class="fw-bold py-2">And much more!</h3>
+                        <p>Lorem ipsum dolor sit amet consectet pis
+                            cing elit, sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid d-flex justify-content-center" style="padding: 0 10vw;">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#modal" class="btn bg-black"
+                    style="width: 184px; height: 65px; box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);"><a
+                        href="./NEWS.html" class="text-white">SEE PRICING</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="episodes" style="background-color: #F7EDE8;">
+        <div class="d-flex flex-column gap-5 pt-140">
+            <div class="container-fluid text-center" style="padding: 0 10vw;">
+                <h1 class="fw-bold pb-4">Recent Episodes</h1>
+                <h3 style="color: #4D4D4D;">Available on your favorite platform</h3>
+            </div>
+            <div class="d-flex flex-column gap-3" style="padding: 0 10vw;">
+                <div class="row gap-3">
+                    <div class="col bg-white" style="padding: 16px; border-radius: 12px; border: 2px solid black;">
+                        <div class="row">
+                            <div class="col">
+                                <img src="./image/cover-1.jpg" alt="" style="width: 100%; height: max-content;">
+
+                            </div>
+                            <div class="col">
+                                <p class="fw-bold" style="color: red;">Eps. 6</p>
+                                <h3 class="fw-bold" style="color: red;">Pandemic Becoming Endemic</h3>
+                                <hr>
+                                <h5>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Curabitur ac ultrices
+                                    odio. </h4>
+                            </div>
+                        </div>
+                        <div class="d-flex style_link gap-2 mt-5 text-center">
+                            <a href="#">covid-19</a>
+                            <a href="#">health</a>
+                        </div>
+                    </div>
+                    <div class="col bg-white" style="padding: 16px; border-radius: 12px; border: 2px solid black;">
+                        <div class="row">
+                            <div class="col">
+                                <img src="./image/cover-2.jpg" alt="" style="width: 100%; height: max-content;">
+
+                            </div>
+                            <div class="col">
+                                <p class="fw-bold" style="color: red;">Eps. 5</p>
+                                <h3 class="fw-bold" style="color: red;">Tesla Autopilot Controversy</h3>
+                                <hr>
+                                <h5>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Curabitur ac ultrices
+                                    odio. </h4>
+                            </div>
+                        </div>
+                        <div class="d-flex style_link gap-2 mt-5 text-center">
+                            <a href="#">automation</a>
+                            <a href="#">tech</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gap-3">
+                    <div class="col bg-white" style="padding: 16px; border-radius: 12px; border: 2px solid black;">
+                        <div class="row">
+                            <div class="col">
+                                <img src="./image/cover-3.jpg" alt="" style="width: 100%; height: max-content;">
+                            </div>
+                            <div class="col">
+                                <p class="fw-bold" style="color: red;">Eps. 4</p>
+                                <h3 class="fw-bold" style="color: red;">Women's Rights? Is it alright?</h3>
+                                <hr>
+                                <h5>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Curabitur ac ultrices
+                                    odio. </h4>
+                            </div>
+                        </div>
+                        <div class="d-flex style_link gap-2 mt-5 text-center">
+                            <a href="#">women’s rights</a>
+                        </div>
+                    </div>
+                    <div class="col bg-white" style="padding: 16px; border-radius: 12px; border: 2px solid black;">
+                        <div class="row">
+                            <div class="col">
+                                <img src="./image/cover-4.jpg" alt="" style="width: 100%; height: max-content;">
+
+                            </div>
+                            <div class="col">
+                                <p class="fw-bold" style="color: red;">Eps. 3</p>
+                                <h3 class="fw-bold" style="color: red;">How to Deal with Self–Confidence</h3>
+                                <hr>
+                                <h5>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Curabitur ac ultrices
+                                    odio. </h4>
+                            </div>
+                        </div>
+                        <div class="d-flex style_link gap-2 mt-5 text-center">
+                            <a href="#">self-esteem</a>
+                            <a href="#">health</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gap-3">
+                    <div class="col bg-white" style="padding: 16px; border-radius: 12px; border: 2px solid black;"">
+                        <div class=" row">
+                        <div class="col">
+                            <img src="./image/cover-5.jpg" alt="" style="width: 100%; height: max-content;">
+
+                        </div>
+                        <div class="col">
+                            <p class="fw-bold" style="color: red;">Eps. 2</p>
+                            <h3 class="fw-bold" style="color: red;">Type of Social Classes of People</h3>
+                            <hr>
+                            <h5>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Curabitur ac ultrices
+                                odio. </h4>
+                        </div>
+                    </div>
+                    <div class="d-flex style_link gap-2 mt-5 text-center">
+                        <a href="#">social class</a>
+                        <a href="#">wealth</a>
+                    </div>
+                </div>
+                <div class="col bg-white" style="padding: 16px; border-radius: 12px; border: 2px solid black;">
+                    <div class="row">
+                        <div class="col">
+                            <img src="./image/cover-6.jpg" alt="" style="width: 100%; height: max-content;">
+
+                        </div>
+                        <div class="col">
+                            <p class="fw-bold" style="color: red;">Eps. 1</p>
+                            <h3 class="fw-bold" style="color: red;">Are you a Perplexed Mind Person?</h3>
+                            <hr>
+                            <h5>Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Curabitur ac ultrices
+                                odio. </h4>
+                        </div>
+                    </div>
+                    <div class="d-flex style_link gap-2 mt-5 text-center">
+                        <a href="#">mind-behaviour</a>
+                        <a href="#">health</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid d-flex justify-content-center" style="padding: 0 10vw;">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modal" class="btn bg-black"
+                style="width: 184px; height: 65px; box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);"><a href="./NEWS.html"
+                    class="text-white">SEE PRICING</a>
+            </button>
+        </div>
+    </section>
+
+    <section class="bg-white" id="news">
+        <div class="d-flex flex-column gap-5 pt-140">
+            <div class="container-fluid text-center" style="padding: 0 10vw;">
+                <h1 class="fw-bold pb-4">Article and News</h1>
+                <h3 style="color: #4D4D4D;">News, tips, tricks and more</h3>
+            </div>
+            <div class="d-flex flex-column gap-3 " style="padding: 0 7vw;">
+                <div class="row gap-3">
+                    <div class="col gap-3 d-flex flex-column p-4"
+                        style="border: 2px solid black; border-radius: 8px; box-shadow: 10px 10px 0px #000000;">
+                        <div>
+                            <img src="./image/micro.svg" alt="" style="width: 100%; height: max-content;">
+                        </div>
+                        <div>
+                            <div>
+                                <h4>PODCAST</h4>
+                                <h2 class="fw-bold py-2" style="color: red;">Setup your own podcast</h2>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation
+                                    ullamco
+                                    laboris...</h4>
+                            </div>
+                            <hr>
+                            <div class="d-flex style_link gap-2 text-center">
+                                <a href="#">business</a>
+                                <a href="#">startup</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col gap-3 d-flex flex-column p-4" style="border: 2px solid black; border-radius: 8px;">
+                        <div><img src="./image/stena.svg" alt="" style="width: 100%; height: max-content;"></div>
+                        <div>
+                            <div>
+                                <h4>TIPS & TRICK</h4>
+                                <h2 class="fw-bold py-2" style="color: red;">Doodle artwork 101</h2>
+                                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut
+                                    labore et dolore magna aliqua. Ut enim ad minimvel iam, quis nostrud exercitation
+                                    ullamco
+                                    laboris...</h4>
+                            </div>
+                            <hr>
+                            <div class="d-flex style_link gap-2 text-center">
+                                <a href="#">art</a>
+                                <a href="#">creative</a>
+                                <a href="#">tips and trick</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid d-flex justify-content-center" style="padding: 0 10vw;">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#modal" class="btn bg-black"
+                    style="width: 184px; height: 65px; box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);"><a href="./NEWS.html"
+                        class="text-white">BROWSE ALL</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="DOWNLOAD"
+        style="background-image: url(./image/CTA.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; padding: 13vh 0 10vh;">
+        <div class="d-flex flex-column gap-5 pt-140">
+            <div class="container-fluid text-center" style="padding: 0 10vw;">
+                <h1 class="fw-bold pb-4">Available now <br>
+                    Pod of Cast App</h1>
+                <h3 style="color: #4D4D4D;">We just launched our podcast app!</h3>
+            </div>
+            <div class="d-flex flex-column gap-3 " style="padding: 0 7vw;">
+            </div>
+            <div class="container-fluid d-flex flex-column justify-content-center align-items-center gap-5"
+                style="padding: 0 10vw;">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#modal" class="btn bg-black"
+                    style="width: 184px; height: 65px; box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);"><a href="https://play.google.com/store/apps?hl=ru"
+                        class="text-white">DOWNLOAD NOW</a>
+                </button>
+
+                <div class="d-flex flex-column justify-content-center">
+                    <h4>Content also available on:</h4>
+                    <div class="d-flex gap-3 justify-content-center align-items-center">
+                        <a href="https://podcasts.google.com/?hl=ru-ru"><img src="./image/icons8-google-podcasts.svg" alt=""
+                                style="width: 24px; height: 24px;"></a>
+
+                        <a href="https://www.spotify.com/int/why-not-available/"><img src="./image/icons8-spotify.svg" alt="" style="width: 24px; height: 24px;"></a>
+
+                        <a href="https://www.youtube.com/"><img src="./image/icons8-youtube.svg" alt="" style="width: 24px; height: 24px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <img src="./image/logo.svg" alt="">©2021.
+                        </h6>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <div class="d-flex gap-3 align-items-center img_size">
+                            <a href="https://ru.wikipedia.org/wiki/Твиттер"><img src="./image/twitter.svg" alt="" style="width: 24px; height: 24px;"></a>
+
+                            <a href="https://en.wikipedia.org/wiki/Instagram"><img src="./image/instagram.svg" alt="" style="width: 24px; height: 24px;"></a>
+
+                            <a href="https://ru.wikipedia.org/wiki/TikTok"><img src="./image/tiktok.svg" alt="" style="width: 24px; height: 24px;"></a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <p>
+                            <a href="./HOME.html">About</a>
+                        </p>
+                        <p>
+                            <a href="./NEWS.html" style="color: red;">Testimonials</a>
+                        </p>
+                        <p>
+                            <a href="./NEWS.html">Features</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <p>
+                            <a href="./NEWS.html" style="color: red;">Episodes</a>
+                        </p>
+                        <p>
+                            <a href="./STAGE.html">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="./STAGE.html">Blog</a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mb-md-0 mb-4">
+                        <div class="container-fluid pb-4">
+                            <p>Listen to episodes on your fav platform:</p>
+
+                            <div class="d-flex gap-3 align-items-center icons_footer">
+                                <a href="https://podcasts.google.com/?hl=ru-ru"><img src="./image/Google Podcast.svg" alt=""
+                                        style="width: 122px; height: 22px;"></a>
+
+                                <a href="https://www.spotify.com/int/why-not-available/"><img src="./image/Spotify.svg" alt=""
+                                        style="width: 80px; height: 22px;"></a>
+
+                                <a href="https://www.youtube.com/"><img src="./image/Youtube.svg" alt=""
+                                        style="width: 94px; height: 22px;"></a>
+                            </div>
+                        </div>
+
+
+                        <div class="container-fluid">
+                            <p>App available on:</p>
+
+                            <div class="d-flex gap-3 align-items-center">
+                                <a href="https://apps.apple.com/ru/charts/iphone"><img src="./image/app_store.svg" alt=""
+                                        style="width: 36px; height: 36px;"></a>
+
+                                <a href="https://play.google.com/store/apps?hl=ru"><img src="./image/google_play.svg" alt=""
+                                        style="width: 36px; height: 36px;"></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="d-flex justify-content-lg-between align-items-center py-4" style="padding: 0 10vw;">
+                <p>©2022. All Rights Reserved. <span style="color: red;">Pod of Cast</span></p>
+                <p>Terms • Privacy</p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="./js/PODCAST.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

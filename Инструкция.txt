@@ -1,0 +1,25 @@
+Переходы:
+
+1. Переход на HOME через логотип сайта или footer "About"
+2. Переход на страницу STAGE через меню MORE и footer через BLOG и PRICING
+3. Переход на страницу NEWS через меню "Episodes", кнопки "RECENT EPISODES", "SEE PRICING", "BROWSE ALL" и footer "Testimonials", "Features", "Episodes"
+4. Переход на регистрацию и авторизацию через кнопку "SUBSCRIBE"
+
+Компоненты:
+
+1) Форма регистрации и авторизации на отдельной странице и при успешном входе должно появляться уведомление Alert 
+"Cтраница LOGIN"
+
+2) Cлайдер
+"Страница HOME"
+
+3) Модальное окно
+"Страница STAGE | текст под картинкой, выделенное красным 'download here'"
+
+4) "Бургер-меню"(при адаптиве с контрольной точки 768px и меньше) с использованием элемента offcanvas
+"На каждой странице"
+
+5) Табы
+"Страница NEWS"
+
+Макет Figma: https://www.figma.com/design/jGmzHBZW0bsRXyLseuzm20/PODCAST?node-id=1-5579&t=xCaZur0EHg1w56yt-1
